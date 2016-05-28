@@ -1,0 +1,82 @@
+//
+//  GameViewController.swift
+//  JKF
+//
+//  Created by Ian Dorosh on 3/3/16.
+//  Copyright (c) 2016 Ian Dorosh. All rights reserved.
+//
+
+import UIKit
+import SpriteKit
+import GameKit
+
+
+
+class GameViewController: UIViewController{
+    
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        if let scene = StartScene(fileNamed:"StartScene") {
+            
+            //Starting Game Center
+            startGC()
+   
+            
+            // Configure the view.
+            let skView = self.view as! SKView
+
+            /* Sprite Kit applies additional optimizations to improve rendering performance */
+            skView.ignoresSiblingOrder = true
+            
+            /* Set the scale mode to scale to fit the window */
+            scene.scaleMode = .AspectFill
+            
+        
+            skView.presentScene(scene)
+            
+        }
+    }
+    
+    //Starts Game Center with the local player
+    func startGC(){
+        
+        let player = GKLocalPlayer.localPlayer()
+        
+        player.authenticateHandler = {(viewController, error) -> Void in
+            
+            if (viewController != nil) {
+                self.presentViewController(viewController!, animated: true, completion: nil)
+            }
+        }
+    }
+
+    
+    override func shouldAutorotate() -> Bool {
+        return true
+    }
+    
+    override func supportedInterfaceOrientations() -> UIInterfaceOrientationMask {
+        if UIDevice.currentDevice().userInterfaceIdiom == .Phone {
+            return .AllButUpsideDown
+        } else {
+            return .All
+        }
+    }
+    
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+        // Release any cached data, images, etc that aren't in use.
+    }
+    
+    override func prefersStatusBarHidden() -> Bool {
+        return true
+    }
+    
+  
+        
+
+}
+
+

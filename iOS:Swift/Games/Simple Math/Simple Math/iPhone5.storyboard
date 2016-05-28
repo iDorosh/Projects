@@ -1,0 +1,566 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="wXZ-dm-WOL">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="Age.otf">
+            <string>Age</string>
+            <string>Age</string>
+            <string>Age</string>
+            <string>Age</string>
+            <string>Age</string>
+            <string>Age</string>
+            <string>Age</string>
+            <string>Age</string>
+            <string>Age</string>
+            <string>Age</string>
+            <string>Age</string>
+            <string>Age</string>
+            <string>Age</string>
+            <string>Age</string>
+        </mutableArray>
+    </customFonts>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="q6x-R1-sGo">
+            <objects>
+                <viewController storyboardIdentifier="iPhone6Plus" useStoryboardIdentifierAsRestorationIdentifier="YES" id="0Gb-BB-53C" customClass="ViewController" customModule="Simple_Addition" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleAspectFit" id="Wr1-4r-mIb">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BG" id="hyt-T1-13b">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="570"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" image="1" id="V6I-Nz-Ya2" customClass="TTTImageView" customModule="Simple_Addition" customModuleProvider="target">
+                                <rect key="frame" x="34" y="194" width="79" height="81"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView tag="1" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="2" id="lHd-vJ-I6H" customClass="TTTImageView" customModule="Simple_Addition" customModuleProvider="target">
+                                <rect key="frame" x="121" y="194" width="79" height="81"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView tag="2" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="3" id="AZC-d8-D7U" customClass="TTTImageView" customModule="Simple_Addition" customModuleProvider="target">
+                                <rect key="frame" x="208" y="194" width="79" height="81"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView tag="3" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="4" id="kcr-fj-GUR" customClass="TTTImageView" customModule="Simple_Addition" customModuleProvider="target">
+                                <rect key="frame" x="34" y="283" width="79" height="81"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView tag="4" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="747" image="5" id="4nQ-go-h7x" customClass="TTTImageView" customModule="Simple_Addition" customModuleProvider="target">
+                                <rect key="frame" x="121" y="283" width="79" height="81"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView tag="5" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" image="6" id="zh2-KK-16V" customClass="TTTImageView" customModule="Simple_Addition" customModuleProvider="target">
+                                <rect key="frame" x="208" y="283" width="79" height="81"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView tag="7" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="746" image="8" id="Dc1-l3-Lo7" customClass="TTTImageView" customModule="Simple_Addition" customModuleProvider="target">
+                                <rect key="frame" x="121" y="372" width="79" height="81"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView tag="8" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="748" image="9" id="008-bN-pkt" customClass="TTTImageView" customModule="Simple_Addition" customModuleProvider="target">
+                                <rect key="frame" x="208" y="372" width="79" height="81"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView tag="6" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="748" image="7" id="I88-kA-rlw" customClass="TTTImageView" customModule="Simple_Addition" customModuleProvider="target">
+                                <rect key="frame" x="34" y="372" width="79" height="81"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView tag="9" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="0" id="Pie-qw-P21" customClass="TTTImageView" customModule="Simple_Addition" customModuleProvider="target">
+                                <rect key="frame" x="121" y="461" width="79" height="81"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="dQD-zU-VB8">
+                                <rect key="frame" x="223" y="477" width="48" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="backspace"/>
+                                <connections>
+                                    <action selector="removeLast:" destination="0Gb-BB-53C" eventType="touchUpInside" id="hsJ-zA-vpL"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="N2q-tp-5kn">
+                                <rect key="frame" x="0.0" y="73" width="320" height="86"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="50"/>
+                                <color key="textColor" red="0.94628817880000005" green="0.94628817880000005" blue="0.94628817880000005" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="l60-lR-2CQ">
+                                <rect key="frame" x="235" y="20" width="65" height="36"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Age" family="Age" pointSize="22"/>
+                                <state key="normal" title="Quit">
+                                    <color key="titleColor" red="0.93498230790000003" green="0.95322239399999997" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="AB4-Oo-FlO" kind="unwind" unwindAction="backToMain:" id="qJb-A9-mq6"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="ZSr-Vq-6gD">
+                                <rect key="frame" x="20" y="20" width="82" height="36"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Age" family="Age" pointSize="22"/>
+                                <state key="normal" title="Pause">
+                                    <color key="titleColor" red="0.93498230790000003" green="0.95322239399999997" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="pause:" destination="0Gb-BB-53C" eventType="touchUpInside" id="7dS-Vr-Bzo"/>
+                                </connections>
+                            </button>
+                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progressViewStyle="bar" id="gxo-ca-7k9">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="2.5"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="progressTintColor" red="0.14901960780000001" green="0.4823529412" blue="0.73333333329999995" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="trackTintColor" red="0.97057950820000005" green="0.9525803974" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            </progressView>
+                            <view contentMode="scaleToFill" id="2Ya-Ph-GUi">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="570"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BG" id="RxR-QN-0h4">
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="570"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Paused" id="sh6-Bm-oqA">
+                                        <rect key="frame" x="4" y="167" width="310" height="62"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="YQx-FH-uJY">
+                                        <rect key="frame" x="74" y="275" width="170" height="50"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="Button" image="resume"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="25"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="resumeButtonAction:" destination="0Gb-BB-53C" eventType="touchUpInside" id="el7-X2-Rc7"/>
+                                        </connections>
+                                    </button>
+                                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Vrc-ZL-hpk">
+                                        <rect key="frame" x="75" y="337" width="170" height="50"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="Button" image="Quit"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="25"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="resumeButtonAction:" destination="0Gb-BB-53C" eventType="touchUpInside" id="2CL-S0-5sC"/>
+                                            <segue destination="AB4-Oo-FlO" kind="unwind" unwindAction="backToMain:" id="mQA-3O-3VJ"/>
+                                        </connections>
+                                    </button>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="3" id="H2f-Dl-sfp">
+                                        <rect key="frame" x="68" y="193" width="183" height="183"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                </subviews>
+                            </view>
+                            <view hidden="YES" contentMode="scaleToFill" id="BS4-vh-0CN">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="570"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" id="bxK-LR-4xk">
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="570"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <subviews>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BG" id="Tpa-fY-lqe">
+                                                <rect key="frame" x="0.0" y="0.0" width="320" height="570"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Results" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="vnm-zH-Fye">
+                                                <rect key="frame" x="62" y="51" width="196" height="65"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" name="Age" family="Age" pointSize="51"/>
+                                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <view contentMode="scaleToFill" id="rm8-Wv-NzX">
+                                                <rect key="frame" x="15" y="171" width="291" height="290"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <subviews>
+                                                    <view contentMode="scaleToFill" id="gfN-4A-Olu">
+                                                        <rect key="frame" x="5" y="5" width="281" height="280"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="42 secs" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Fld-q2-xGo">
+                                                                <rect key="frame" x="-5" y="38" width="286" height="65"/>
+                                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                                <fontDescription key="fontDescription" name="Age" family="Age" pointSize="48"/>
+                                                                <color key="textColor" red="0.98926134919999997" green="1" blue="0.99765321139999996" alpha="1" colorSpace="calibratedRGB"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Highscore" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="DXg-xh-tPz">
+                                                                <rect key="frame" x="76" y="104" width="124" height="26"/>
+                                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                                <fontDescription key="fontDescription" name="Age" family="Age" pointSize="26"/>
+                                                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Score" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="0vM-UC-RDb">
+                                                                <rect key="frame" x="101" y="14" width="74" height="23"/>
+                                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                                <fontDescription key="fontDescription" name="Age" family="Age" pointSize="26"/>
+                                                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="aYc-iD-c53">
+                                                                <rect key="frame" x="15" y="199" width="115" height="55"/>
+                                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                                <state key="normal" image="Replay"/>
+                                                                <connections>
+                                                                    <action selector="replayButton:" destination="0Gb-BB-53C" eventType="touchUpInside" id="jS3-Vu-Q0f"/>
+                                                                </connections>
+                                                            </button>
+                                                            <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="EaY-XD-cQT">
+                                                                <rect key="frame" x="147" y="199" width="115" height="55"/>
+                                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                                <state key="normal" image="Menu"/>
+                                                                <connections>
+                                                                    <segue destination="AB4-Oo-FlO" kind="unwind" unwindAction="backToMain:" id="9nk-Yc-xfQ"/>
+                                                                </connections>
+                                                            </button>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="13 secs" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="TKp-s0-yHB">
+                                                                <rect key="frame" x="7" y="133" width="263" height="65"/>
+                                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                                <fontDescription key="fontDescription" name="Age" family="Age" pointSize="48"/>
+                                                                <color key="textColor" red="0.93498230790000003" green="0.95322239399999997" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                        </subviews>
+                                                        <color key="backgroundColor" red="0.050980392159999999" green="0.1019607843" blue="0.15686274510000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                                <integer key="value" value="34"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                                        </userDefinedRuntimeAttributes>
+                                                    </view>
+                                                </subviews>
+                                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                        <integer key="value" value="36"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                                </userDefinedRuntimeAttributes>
+                                            </view>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Flawless" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="wbP-Wr-7FX">
+                                                <rect key="frame" x="8" y="118" width="304" height="34"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" type="system" weight="thin" pointSize="23"/>
+                                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </view>
+                                </subviews>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="countDown" destination="H2f-Dl-sfp" id="FPr-eJ-ghV"/>
+                        <outlet property="countdownView" destination="2Ya-Ph-GUi" id="uuK-2A-ca5"/>
+                        <outlet property="currentScore" destination="Fld-q2-xGo" id="myd-9U-BbM"/>
+                        <outlet property="eqaution" destination="N2q-tp-5kn" id="8SY-fI-mV7"/>
+                        <outlet property="flawless" destination="wbP-Wr-7FX" id="juR-Xc-EYW"/>
+                        <outlet property="highscore" destination="TKp-s0-yHB" id="5tI-RN-aEZ"/>
+                        <outlet property="pauseBttn" destination="ZSr-Vq-6gD" id="V9q-AM-FdH"/>
+                        <outlet property="pausedLabel" destination="sh6-Bm-oqA" id="Mxi-qE-zyU"/>
+                        <outlet property="progress" destination="gxo-ca-7k9" id="bD9-wh-zIb"/>
+                        <outlet property="quitButton" destination="Vrc-ZL-hpk" id="iNE-n6-ZTs"/>
+                        <outlet property="resumeButton" destination="YQx-FH-uJY" id="Z7A-6H-Cmx"/>
+                        <outlet property="showScore" destination="BS4-vh-0CN" id="CTr-i6-Ybc"/>
+                        <outletCollection property="fields" destination="V6I-Nz-Ya2" collectionClass="NSMutableArray" id="iKq-Sa-6Hk"/>
+                        <outletCollection property="fields" destination="lHd-vJ-I6H" collectionClass="NSMutableArray" id="FbB-kK-BgT"/>
+                        <outletCollection property="fields" destination="AZC-d8-D7U" collectionClass="NSMutableArray" id="3rv-hE-fRd"/>
+                        <outletCollection property="fields" destination="kcr-fj-GUR" collectionClass="NSMutableArray" id="Y6g-Q1-L7P"/>
+                        <outletCollection property="fields" destination="4nQ-go-h7x" collectionClass="NSMutableArray" id="ilL-8h-fje"/>
+                        <outletCollection property="fields" destination="zh2-KK-16V" collectionClass="NSMutableArray" id="Mni-NH-E7a"/>
+                        <outletCollection property="fields" destination="I88-kA-rlw" collectionClass="NSMutableArray" id="NvM-Qf-ZiT"/>
+                        <outletCollection property="fields" destination="Dc1-l3-Lo7" collectionClass="NSMutableArray" id="27h-px-9Nm"/>
+                        <outletCollection property="fields" destination="008-bN-pkt" collectionClass="NSMutableArray" id="XMx-Cy-7Gr"/>
+                        <outletCollection property="fields" destination="Pie-qw-P21" collectionClass="NSMutableArray" id="qgR-k2-t7d"/>
+                    </connections>
+                </viewController>
+                <exit id="AB4-Oo-FlO" userLabel="Exit" sceneMemberID="exit"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LmN-cE-ExM" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="630" y="418"/>
+        </scene>
+        <!--iPhone5-->
+        <scene sceneID="97h-es-USF">
+            <objects>
+                <viewController storyboardIdentifier="iPhone5" title="iPhone5" id="wXZ-dm-WOL" customClass="StartScreenViewController" customModule="Simple_Addition" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="N65-7a-ANF">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="StartBG" id="ZYD-Ie-AKv">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="bop-tk-XUb">
+                                <rect key="frame" x="20" y="19" width="28" height="37"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="iosGear"/>
+                                <connections>
+                                    <action selector="Settings:" destination="wXZ-dm-WOL" eventType="touchUpInside" id="JcN-hx-uJm"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Vulkan Games" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="y5l-gE-g0D">
+                                <rect key="frame" x="45" y="536" width="230" height="24"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" weight="thin" pointSize="20"/>
+                                <color key="textColor" red="0.75002003210000001" green="0.75002003210000001" blue="0.75002003210000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="iby-qd-NTY">
+                                <rect key="frame" x="54" y="311" width="213" height="62"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="Single"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="31"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="playing:" destination="wXZ-dm-WOL" eventType="touchUpInside" id="1vN-EU-ULe"/>
+                                    <segue destination="0Gb-BB-53C" kind="modal" id="yjr-wQ-rwi"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="0cQ-30-DOT">
+                                <rect key="frame" x="54" y="388" width="213" height="62"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="gc"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="31"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="iap:" destination="wXZ-dm-WOL" eventType="touchUpInside" id="g4a-e1-lKv"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="URN-Le-Gsm">
+                                <rect key="frame" x="270" y="14" width="30" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="sound"/>
+                                <connections>
+                                    <action selector="sound:" destination="wXZ-dm-WOL" eventType="touchUpInside" id="o6V-12-TFP"/>
+                                </connections>
+                            </button>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Gs5-fQ-yGQ">
+                                <rect key="frame" x="270" y="14" width="30" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="mute"/>
+                                <connections>
+                                    <action selector="sound:" destination="wXZ-dm-WOL" eventType="touchUpInside" id="j5p-4n-SPb"/>
+                                    <action selector="soundMute:" destination="wXZ-dm-WOL" eventType="touchUpInside" id="rXY-uj-zop"/>
+                                </connections>
+                            </button>
+                            <view hidden="YES" contentMode="scaleToFill" id="me1-ba-xSz">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BG" id="qcq-jp-Eaj">
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="5Ny-j3-p7N">
+                                        <rect key="frame" x="57" y="496" width="206" height="56"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" name="Age" family="Age" pointSize="45"/>
+                                        <inset key="contentEdgeInsets" minX="0.0" minY="5" maxX="0.0" maxY="0.0"/>
+                                        <state key="normal" title="Done">
+                                            <color key="titleColor" red="0.12549019610000001" green="0.46274509800000002" blue="0.76470588240000004" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="28"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="doneButton:" destination="wXZ-dm-WOL" eventType="touchUpInside" id="GbY-5V-MjR"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Settings" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="tBw-O5-foe">
+                                        <rect key="frame" x="42" y="20" width="236" height="60"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="Age" family="Age" pointSize="50"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <view contentMode="scaleToFill" id="x18-CZ-cGX">
+                                        <rect key="frame" x="12" y="78" width="296" height="412"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="vvf-Yb-cus">
+                                                <rect key="frame" x="33" y="18" width="231" height="58"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" red="0.18823529410000001" green="0.20784313730000001" blue="0.23137254900000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                <fontDescription key="fontDescription" name="Age" family="Age" pointSize="24"/>
+                                                <inset key="contentEdgeInsets" minX="0.0" minY="4" maxX="0.0" maxY="0.0"/>
+                                                <state key="normal" title="Remove Ads"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                        <integer key="value" value="29"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="removeAds:" destination="wXZ-dm-WOL" eventType="touchUpInside" id="wLH-yz-gy9"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="YeC-v5-Vpp">
+                                                <rect key="frame" x="33" y="177" width="231" height="58"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" red="0.18823529410000001" green="0.20784313730000001" blue="0.23137254900000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                <fontDescription key="fontDescription" name="Age" family="Age" pointSize="24"/>
+                                                <inset key="contentEdgeInsets" minX="0.0" minY="4" maxX="0.0" maxY="0.0"/>
+                                                <state key="normal" title="Game Center On"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                        <integer key="value" value="29"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="gameCenterBttnClick:" destination="wXZ-dm-WOL" eventType="touchUpInside" id="5de-go-UFv"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="jum-iw-KdK">
+                                                <rect key="frame" x="33" y="335" width="231" height="58"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                <fontDescription key="fontDescription" name="Age" family="Age" pointSize="26"/>
+                                                <inset key="contentEdgeInsets" minX="0.0" minY="3" maxX="0.0" maxY="0.0"/>
+                                                <state key="normal" title="Contact Us">
+                                                    <color key="titleColor" red="0.12549019610000001" green="0.46274509800000002" blue="0.76470588240000004" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                        <integer key="value" value="29"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="contactAction:" destination="wXZ-dm-WOL" eventType="touchUpInside" id="bjP-lx-VlD"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="moO-Y2-RXI">
+                                                <rect key="frame" x="33" y="97" width="231" height="58"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" red="0.18823529410000001" green="0.20784313730000001" blue="0.23137254900000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                <fontDescription key="fontDescription" name="Age" family="Age" pointSize="24"/>
+                                                <inset key="contentEdgeInsets" minX="0.0" minY="4" maxX="0.0" maxY="0.0"/>
+                                                <state key="normal" title="Restore Purchase"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                        <integer key="value" value="29"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="restoreAction:" destination="wXZ-dm-WOL" eventType="touchUpInside" id="eAQ-Eq-QC4"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Odk-ge-ToH">
+                                                <rect key="frame" x="33" y="256" width="231" height="58"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                <fontDescription key="fontDescription" name="Age" family="Age" pointSize="26"/>
+                                                <inset key="contentEdgeInsets" minX="0.0" minY="3" maxX="0.0" maxY="0.0"/>
+                                                <state key="normal" title="Twitter">
+                                                    <color key="titleColor" red="0.12549019610000001" green="0.46274509800000002" blue="0.76470588240000004" alpha="1" colorSpace="calibratedRGB"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                        <integer key="value" value="29"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="twitterAction:" destination="wXZ-dm-WOL" eventType="touchUpInside" id="2rd-pU-9G4"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" red="0.092449175209999998" green="0.092449175209999998" blue="0.092449175209999998" alpha="0.5" colorSpace="calibratedRGB"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="34"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="contactUsBttn" destination="jum-iw-KdK" id="MRL-9S-7g7"/>
+                        <outlet property="doneBttn" destination="5Ny-j3-p7N" id="Kof-hd-7TU"/>
+                        <outlet property="gcbttn" destination="0cQ-30-DOT" id="wWm-se-W6U"/>
+                        <outlet property="playbttn" destination="iby-qd-NTY" id="CaO-4A-ECT"/>
+                        <outlet property="purchaseAdsButton" destination="vvf-Yb-cus" id="Ypl-rR-IqA"/>
+                        <outlet property="restore" destination="moO-Y2-RXI" id="daN-RG-JRZ"/>
+                        <outlet property="restoreHighScoreButton" destination="YeC-v5-Vpp" id="yF0-4r-Bru"/>
+                        <outlet property="settingsBG" destination="x18-CZ-cGX" id="0zu-CF-hnh"/>
+                        <outlet property="settingsLabel" destination="tBw-O5-foe" id="SW8-rg-hWm"/>
+                        <outlet property="settingsView" destination="me1-ba-xSz" id="h9j-yI-DBm"/>
+                        <outlet property="soundMute0" destination="Gs5-fQ-yGQ" id="4N2-G3-BXW"/>
+                        <outlet property="soundO" destination="URN-Le-Gsm" id="DDU-OK-Znf"/>
+                        <outlet property="twitterBttn" destination="Odk-ge-ToH" id="KaF-6V-OHn"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LFb-96-WNn" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="68" y="425"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="0" width="162" height="162"/>
+        <image name="1" width="162" height="162"/>
+        <image name="2" width="162" height="162"/>
+        <image name="3" width="162" height="162"/>
+        <image name="4" width="162" height="162"/>
+        <image name="5" width="162" height="162"/>
+        <image name="6" width="162" height="162"/>
+        <image name="7" width="162" height="162"/>
+        <image name="8" width="162" height="162"/>
+        <image name="9" width="162" height="162"/>
+        <image name="BG" width="1242" height="2208"/>
+        <image name="Menu" width="321" height="130"/>
+        <image name="Paused" width="1242" height="235"/>
+        <image name="Quit" width="757" height="208"/>
+        <image name="Replay" width="321" height="130"/>
+        <image name="Single" width="757" height="208"/>
+        <image name="StartBG" width="1242" height="2208"/>
+        <image name="backspace" width="151" height="152"/>
+        <image name="gc" width="757" height="208"/>
+        <image name="iosGear" width="115" height="156"/>
+        <image name="mute" width="295" height="492"/>
+        <image name="resume" width="757" height="208"/>
+        <image name="sound" width="311" height="492"/>
+    </resources>
+</document>
