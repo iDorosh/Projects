@@ -1,0 +1,24 @@
+//
+// Prefix header for all source files of the 'Dorosh_Ian_UtilityApp' target in the 'Dorosh_Ian_UtilityApp' project
+//
+
+#ifdef __OBJC__
+    #import <Foundation/Foundation.h>
+    #import <UIKit/UIKit.h>
+#endif
+ 
+#import "defines.h"
+#include "ThirdpartyNS.h"
+#import <AvailabilityInternal.h>
+
+#ifdef __IPHONE_9_0
+#define IS_XCODE_7 true
+#else
+#define IS_XCODE_7 false
+#endif
+
+#ifdef __IPHONE_9_1
+#define IS_XCODE_7_1 true
+#else
+#define IS_XCODE_7_1 false
+#endif
