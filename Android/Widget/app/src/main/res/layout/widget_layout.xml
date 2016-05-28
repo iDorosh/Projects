@@ -1,0 +1,32 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="#94ffffff">
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Add"
+        android:id="@+id/addButton"
+        android:textColor="#ffffff"
+        android:background="#e8273e50"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true" />
+
+    <ListView android:id="@+id/phone_list"
+        android:layout_width="fill_parent"
+        android:layout_height="403dp"
+        android:layout_alignParentTop="true"
+        android:layout_above="@+id/addButton" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:id="@+id/empty"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:textColor="#b8324352" />
+
+</RelativeLayout>

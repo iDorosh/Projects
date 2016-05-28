@@ -1,0 +1,25 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    tools:context="com.idorosh.i_dorosh_multiactivity.MainActivity">
+
+
+    <fragment
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        class="com.idorosh.i_dorosh_multiactivity.ListViewFragment"
+        android:id="@+id/fragment"/>
+    <fragment
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        class="com.idorosh.i_dorosh_multiactivity.DetailViewFragment"
+        android:id="@+id/fragment2"/>
+    <fragment
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        class="com.idorosh.i_dorosh_multiactivity.AddViewFragment"
+        android:id="@+id/fragment3"/>
+
+</LinearLayout>

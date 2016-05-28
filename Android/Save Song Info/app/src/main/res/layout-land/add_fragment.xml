@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <EditText
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/songTitle"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="22dp"
+        android:textColorHint="#2eb696"
+        android:hint="Enter Song Title"
+        android:gravity="center_horizontal"
+        android:layout_marginLeft="19dp"
+        android:layout_marginStart="19dp"
+        android:layout_below="@+id/newSongLabel"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/artistName"
+        android:layout_gravity="center_horizontal"
+        android:textColorHint="#2eb696"
+        android:hint="Enter Artist Name"
+        android:gravity="center_horizontal"
+        android:layout_below="@+id/songTitle"
+        android:layout_alignLeft="@+id/songTitle"
+        android:layout_alignStart="@+id/songTitle"
+        android:layout_marginTop="25dp" />
+
+    <EditText
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/albumTitle"
+        android:layout_gravity="center_horizontal"
+        android:textColorHint="#2eb696"
+        android:hint="Enter Album Title"
+        android:gravity="center_horizontal"
+        android:layout_alignParentBottom="true"
+        android:layout_alignLeft="@+id/artistName"
+        android:layout_alignStart="@+id/artistName"
+        android:layout_marginBottom="20dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Save New Song"
+        android:id="@+id/newSongLabel"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="15dp"
+        android:textSize="24sp"
+        android:textColor="#ffffff"
+        android:background="#2eb696"
+        android:paddingLeft="95dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textAlignment="center" />
+
+    <Button
+        android:layout_width="276dp"
+        android:layout_height="wrap_content"
+        android:text="Save"
+        android:id="@+id/saveSong"
+        android:layout_gravity="center_horizontal"
+        android:background="#2eb696"
+        android:textColor="#ffffff"
+        android:layout_marginRight="22dp"
+        android:layout_marginEnd="22dp"
+        android:layout_alignBottom="@+id/artistName"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+</RelativeLayout>

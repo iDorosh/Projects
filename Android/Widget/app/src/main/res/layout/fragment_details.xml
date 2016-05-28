@@ -1,0 +1,87 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.idorosh.i_dorosh_widget.DetailsFragment">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:id="@+id/detail1Text"
+        android:textSize="24sp"
+        android:textColor="#ffffff"
+        android:background="#1a2d3e"
+        android:paddingBottom="10dp"
+        android:textAlignment="center"
+        android:paddingTop="10dp"
+        android:layout_alignParentEnd="false"
+        android:layout_alignParentRight="false"
+        android:gravity="center_horizontal"
+        android:text="Selected Item" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Device OS"
+        android:id="@+id/detail2Label"
+        android:textColor="#1a2d3e"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="35dp"
+        android:layout_below="@+id/detail1Text" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Supported Carriers"
+        android:id="@+id/detail3label"
+        android:textColor="#1a2d3e"
+        android:layout_below="@+id/detail2Text"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="35dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Price"
+        android:id="@+id/detail4Label"
+        android:textColor="#1a2d3e"
+        android:layout_below="@+id/detail3Text"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="35dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Device OS Text"
+        android:id="@+id/detail2Text"
+        android:layout_below="@+id/detail2Label"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Supported Carriers Text"
+        android:id="@+id/detail3Text"
+        android:layout_below="@+id/detail3label"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Device Price Text"
+        android:id="@+id/detail4Text"
+        android:layout_below="@+id/detail4Label"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>

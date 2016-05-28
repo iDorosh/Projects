@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <PreferenceCategory android:title="Headline Preferences" >
+
+        <Preference
+            android:key="PREF_CLICK"
+            android:summary="Clear Cached Data"
+            android:title="Remove cached files from device memory" />
+
+    </PreferenceCategory>
+
+</PreferenceScreen>

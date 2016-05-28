@@ -1,0 +1,138 @@
+
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="horizontal"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+
+
+    <fragment class="com.idorosh.dorosh_fundementals.TitlesFragment"
+        android:id="@+id/titles"
+        android:layout_width="300dp"
+        android:layout_height="250dp"
+
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        tools:layout="@layout/custom_list"
+        android:layout_alignParentTop="true" />
+
+
+    <FrameLayout
+        android:id="@+id/details"
+        android:layout_width="340dp"
+        android:layout_height="match_parent"
+        android:background="?android:attr/detailsElementBackground"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_toStartOf="@+id/titles">
+
+        <TextView
+            android:layout_width="274dp"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:id="@+id/plot"
+            android:layout_gravity="center"
+            android:singleLine="false"
+            android:textSize="12sp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:textColor="#ffffff"
+            android:background="#33af3a"
+            android:layout_marginTop="30dp"
+            android:textIsSelectable="false"
+            android:padding="5dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="URL"
+            android:id="@+id/textView2"
+            android:layout_gravity="left|top"
+            android:textColor="#ffffff"
+            android:layout_above="@+id/detailPlot"
+            android:layout_alignLeft="@+id/detailPlot"
+            android:layout_alignStart="@+id/detailPlot"
+            android:layout_marginTop="110dp"
+            android:layout_marginLeft="18dp"
+            android:background="#33af3a"
+            android:padding="5dp"
+            android:textSize="16dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Small Text"
+            android:id="@+id/year"
+            android:layout_gravity="center_horizontal|bottom"
+            android:layout_alignParentBottom="true"
+            android:layout_alignLeft="@+id/detailGenre"
+            android:layout_alignStart="@+id/detailGenre"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="45dp"
+            android:background="#33af3a"
+            android:textColor="#ffffff"
+            android:padding="5dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Small Text"
+            android:id="@+id/genre"
+            android:layout_gravity="center_horizontal|top"
+            android:layout_below="@+id/detailTitle"
+            android:layout_toRightOf="@+id/textView2"
+            android:layout_toEndOf="@+id/textView2"
+            android:layout_marginTop="70dp"
+            android:background="#33af3a"
+            android:textColor="#ffffff"
+            android:padding="5dp" />
+
+        <TextView
+            android:layout_width="264dp"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:id="@+id/title"
+            android:gravity="center"
+            android:layout_gravity="center_horizontal|top"
+            android:textColor="#ffffff"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="15dp"
+            android:background="#33af3a"
+            android:textSize="14sp"
+            android:padding="5dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Publisher"
+            android:id="@+id/textView4"
+            android:layout_gravity="left|bottom"
+            android:layout_marginBottom="5dp"
+            android:textColor="#ffffff"
+            android:layout_marginLeft="75dp"
+            android:background="#33af3a"
+            android:padding="5dp" />
+
+        <ProgressBar
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:id="@+id/progressBar1"
+            android:layout_gravity="center"
+            android:layout_weight="0.11"
+            android:indeterminate="false"
+            android:layout_centerVertical="true"
+            android:layout_alignRight="@+id/titles"
+            android:layout_alignEnd="@+id/titles" />
+    </FrameLayout>
+
+</RelativeLayout>

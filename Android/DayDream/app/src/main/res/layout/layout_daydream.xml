@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/backGround"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/beach"
+        android:scaleType="fitXY" />
+
+    <TextClock
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/digitalClock"
+        android:layout_alignParentTop="false"
+        android:layout_centerInParent="true"
+        android:textSize="80sp"
+        android:textColor="#b4ffffff"
+        android:format24Hour="kk:mm" />
+
+    <TextClock
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/date"
+        android:textSize="30dp"
+        android:textColor="#b4ffffff"
+        android:format12Hour="MMM dd, yyyy"
+        android:layout_below="@+id/digitalClock"
+        android:layout_centerHorizontal="true" />
+
+    <AnalogClock
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:id="@+id/analogClock"
+        android:layout_above="@+id/date"
+        android:layout_centerHorizontal="true"
+        android:visibility="invisible" />
+
+</RelativeLayout>

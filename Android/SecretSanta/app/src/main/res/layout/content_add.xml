@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.iandorosh.secretsanta.Add"
+    tools:showIn="@layout/activity_add">
+
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/addName"
+        android:layout_marginTop="35dp"
+        android:hint="Alex Johnson"
+        android:gravity="center"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/addContact" />
+
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/addContact"
+        android:layout_marginTop="51dp"
+        android:layout_below="@+id/addName"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:hint="alexjohnson@work.com" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Phone Number"
+        android:id="@+id/addUseNumber"
+        android:checked="true"
+        android:textColor="#314099"
+        android:textSize="18sp"
+        android:layout_below="@+id/textView"
+        android:layout_alignStart="@+id/addContact"
+        android:layout_marginTop="20dp" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="E-Mail"
+        android:id="@+id/addUseEmail"
+        android:layout_alignTop="@+id/addUseNumber"
+        android:layout_alignRight="@+id/addContact"
+        android:layout_alignEnd="@+id/addContact"
+        android:checked="false"
+        android:textColor="#314099"
+        android:textSize="18sp" />
+
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/addInterests"
+        android:layout_marginTop="36dp"
+        android:hint="football, hockey, the walking dead"
+        android:gravity="center"
+        android:layout_below="@+id/addUseNumber"
+        android:layout_alignStart="@+id/addUseNumber" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Name"
+        android:id="@+id/nameLabel"
+        android:layout_below="@+id/addName"
+        android:layout_centerHorizontal="true"
+        android:textSize="18sp"
+        android:textColor="#314099" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Cellphone or E-Mail"
+        android:id="@+id/textView"
+        android:textSize="18sp"
+        android:textColor="#314099"
+        android:layout_below="@+id/addContact"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Interests"
+        android:id="@+id/textView2"
+        android:textSize="18sp"
+        android:textColor="#314099"
+        android:layout_below="@+id/addInterests"
+        android:layout_centerHorizontal="true" />
+
+    <Spinner
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/addSpinner"
+        android:spinnerMode="dropdown"
+        android:visibility="invisible"
+        android:gravity="center"
+        android:layout_below="@+id/textView2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Which group would you like to save to?"
+        android:id="@+id/selectGroupText"
+        android:layout_below="@+id/addSpinner"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:visibility="invisible" />
+
+</RelativeLayout>

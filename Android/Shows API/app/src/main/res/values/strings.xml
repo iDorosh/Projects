@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Dorosh_Fundementals</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+
+    <string-array name="shows">
+        <item>AT&amp;T launches Wi-Fi calling for Apple iPhones with iOS 9</item>
+        <item>News station replaces traditional TV cameras with iPhones and selfie sticks</item>
+        <item>Did Apple Sell You A Good Or Bad iPhone 6S Plus?</item>
+        <item> How Apple can add wireless charging to iPhones using haptics and speakers</item>
+
+    </string-array>
+
+</resources>

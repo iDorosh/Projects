@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.iandorosh.secretsanta.EditSanta">
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Phone Number"
+        android:id="@+id/editNumberCheck"
+        android:layout_centerVertical="true"
+        android:layout_alignLeft="@+id/editText4"
+        android:layout_alignStart="@+id/editText4"
+        android:checked="true"
+        android:textColor="#314099"
+        android:textSize="18sp" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="E-Mail"
+        android:id="@+id/editEmailCheck"
+        android:checked="false"
+        android:textColor="#314099"
+        android:textSize="18sp"
+        android:layout_alignTop="@+id/editNumberCheck"
+        android:layout_alignRight="@+id/editText4"
+        android:layout_alignEnd="@+id/editText4" />
+
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/editText3"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="45dp"
+        android:hint="Alex Johnson"
+        android:gravity="center" />
+
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/editText4"
+        android:layout_marginTop="51dp"
+        android:layout_below="@+id/editText3"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:hint="alexjohnson@work.com" />
+
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/editText5"
+        android:hint="football, hockey, the walking dead"
+        android:gravity="center"
+        android:layout_above="@+id/textView12"
+        android:layout_alignLeft="@+id/editNumberCheck"
+        android:layout_alignStart="@+id/editNumberCheck" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Name"
+        android:id="@+id/textView10"
+        android:layout_below="@+id/editText3"
+        android:layout_centerHorizontal="true"
+        android:textSize="18sp"
+        android:textColor="#314099" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Cellphone or E-Mail"
+        android:id="@+id/textView11"
+        android:textSize="18sp"
+        android:textColor="#314099"
+        android:layout_below="@+id/editText4"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Interests"
+        android:id="@+id/textView12"
+        android:textSize="18sp"
+        android:textColor="#314099"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="92dp" />
+
+</RelativeLayout>

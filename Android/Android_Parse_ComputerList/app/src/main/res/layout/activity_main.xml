@@ -1,0 +1,308 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="5dp"
+    tools:context="com.idorosh.androidusersdata.MainActivity"
+    android:paddingTop="5dp"
+    android:background="#272e3d"
+    android:visibility="visible">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/showEverything"
+        android:visibility="invisible">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:id="@+id/buildTitle"
+            android:textColor="#ffffff"
+            android:textSize="35sp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:id="@+id/buildPrice"
+            android:layout_below="@+id/buildTitle"
+            android:layout_centerHorizontal="true"
+            android:textColor="#838383" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Motherboard"
+            android:id="@+id/textView2"
+            android:layout_below="@+id/buildPrice"
+            android:layout_alignParentStart="true"
+            android:textColor="#8e8e8e"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="5dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:id="@+id/buildMotherboard"
+            android:layout_below="@+id/textView2"
+            android:layout_alignStart="@+id/textView2"
+            android:layout_marginRight="20dp"
+            android:textColor="#ffffff"
+            android:layout_marginTop="5dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Case"
+            android:id="@+id/textView3"
+            android:textColor="#8e8e8e"
+            android:layout_marginLeft="20dp"
+            android:layout_below="@+id/buildMotherboard"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="20dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:id="@+id/buildCase"
+            android:layout_below="@+id/textView3"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="20dp"
+            android:textColor="#ffffff" />
+
+        <Button
+            style="?android:textAppearanceSmall"
+            android:id="@+id/findMB"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:text="Find"
+            android:textStyle="bold"
+            android:background="@drawable/roundbutton"
+            android:layout_gravity="center_horizontal"
+            android:textColor="#ffffff"
+            android:layout_below="@+id/textView2"
+            android:layout_alignEnd="@+id/viewFa" />
+
+        <Button
+            style="?android:textAppearanceSmall"
+            android:id="@+id/findCase"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:text="Find"
+            android:textStyle="bold"
+            android:background="@drawable/roundbutton"
+            android:layout_gravity="center_horizontal"
+            android:textColor="#ffffff"
+            android:layout_below="@+id/findMB"
+            android:layout_alignStart="@+id/findMB"
+            android:layout_marginTop="30dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="CPU"
+            android:id="@+id/textView4"
+            android:textColor="#8e8e8e"
+            android:layout_marginLeft="0dp"
+            android:layout_below="@+id/buildCase"
+            android:layout_alignStart="@+id/buildCase"
+            android:layout_marginTop="20dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:id="@+id/buildCPU"
+            android:textColor="#ffffff"
+            android:layout_below="@+id/textView4"
+            android:layout_alignStart="@+id/textView4"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="20dp" />
+
+        <Button
+            style="?android:textAppearanceSmall"
+            android:id="@+id/findCPU"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:text="Find"
+            android:textStyle="bold"
+            android:background="@drawable/roundbutton"
+            android:layout_gravity="center_horizontal"
+            android:textColor="#ffffff"
+            android:layout_below="@+id/findCase"
+            android:layout_alignStart="@+id/findCase"
+            android:layout_marginTop="30dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="GPU"
+            android:id="@+id/build"
+            android:textColor="#8e8e8e"
+            android:layout_marginLeft="0dp"
+            android:layout_below="@+id/buildCPU"
+            android:layout_alignStart="@+id/buildCPU"
+            android:layout_marginTop="20dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:id="@+id/buildGPU"
+            android:textColor="#ffffff"
+            android:layout_below="@+id/build"
+            android:layout_alignStart="@+id/build"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="20dp" />
+
+        <Button
+            style="?android:textAppearanceSmall"
+            android:id="@+id/findGPU"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:text="Find"
+            android:textStyle="bold"
+            android:background="@drawable/roundbutton"
+            android:layout_gravity="center_horizontal"
+            android:textColor="#ffffff"
+            android:layout_below="@+id/findCPU"
+            android:layout_alignStart="@+id/findCPU"
+            android:layout_marginTop="30dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="RAM"
+            android:id="@+id/textView5"
+            android:textColor="#8e8e8e"
+            android:layout_marginLeft="0dp"
+            android:layout_below="@+id/buildGPU"
+            android:layout_alignStart="@+id/buildGPU"
+            android:layout_marginTop="20dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:id="@+id/buildRam"
+            android:textColor="#ffffff"
+            android:layout_below="@+id/textView5"
+            android:layout_alignStart="@+id/textView5"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="20dp" />
+
+        <Button
+            style="?android:textAppearanceSmall"
+            android:id="@+id/findRAM"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:text="Find"
+            android:textStyle="bold"
+            android:background="@drawable/roundbutton"
+            android:layout_gravity="center_horizontal"
+            android:textColor="#ffffff"
+            android:layout_below="@+id/buildGPU"
+            android:layout_alignStart="@+id/findGPU"
+            android:layout_marginTop="30dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Storage"
+            android:id="@+id/textView6"
+            android:textColor="#8e8e8e"
+            android:layout_marginLeft="0dp"
+            android:layout_below="@+id/buildRam"
+            android:layout_alignStart="@+id/buildRam"
+            android:layout_marginTop="20dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:id="@+id/buildStorage"
+            android:textColor="#ffffff"
+            android:layout_marginRight="20dp"
+            android:layout_below="@+id/textView6"
+            android:layout_alignStart="@+id/textView6"
+            android:layout_marginTop="5dp" />
+
+        <Button
+            style="?android:textAppearanceSmall"
+            android:id="@+id/findStorage"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:text="Find"
+            android:textStyle="bold"
+            android:background="@drawable/roundbutton"
+            android:layout_gravity="center_horizontal"
+            android:textColor="#ffffff"
+            android:layout_below="@+id/findRAM"
+            android:layout_alignStart="@+id/findRAM"
+            android:layout_marginTop="30dp" />
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/viewFa"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|end"
+            android:src="@drawable/add"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="20dp"
+            android:visibility="invisible" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Nothing Yet! Please Build A PC"
+        android:id="@+id/nothing"
+        android:textColor="#ffffff"
+        android:visibility="visible"
+        android:layout_centerInParent="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:id="@+id/helloText"
+        android:textSize="50sp"
+        android:textColor="#ffffff"
+        android:layout_alignBottom="@+id/findCase"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="180dp"
+        android:visibility="visible" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/viewFab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:src="@drawable/add"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="20dp"
+        android:visibility="visible" />
+
+</RelativeLayout>

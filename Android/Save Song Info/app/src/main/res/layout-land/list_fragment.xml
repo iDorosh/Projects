@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Favorite Music"
+        android:id="@+id/textView4"
+        android:typeface="sans"
+        android:textSize="35sp"
+        android:textColor="#ffffff"
+        android:background="#24a47f"
+        android:paddingLeft="50dp"
+        android:paddingRight="50dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp" />
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="147dp"
+        android:id="@android:id/list"
+        android:layout_marginTop="20dp" />
+
+    <Button
+        android:layout_width="276dp"
+        android:layout_height="wrap_content"
+        android:text="Add Song"
+        android:id="@+id/addButton"
+        android:layout_gravity="center_horizontal"
+        android:background="#2eb696"
+        android:textColor="#ffffff"
+        android:layout_marginTop="30dp" />
+</LinearLayout>

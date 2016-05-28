@@ -1,0 +1,11 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="idorosh.com.i_dorosh_mapping.Form">
+    <item android:id="@+id/action_add"
+        android:title="@string/action_settings"
+        android:orderInCategory="100"
+        android:icon="@android:drawable/ic_menu_save"
+        android:showAsAction="always" />
+</menu>
+
+
